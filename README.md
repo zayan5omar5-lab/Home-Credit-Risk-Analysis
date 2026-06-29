@@ -35,6 +35,13 @@ This multi-page Power BI dashboard is designed with a professional corporate ban
 - **Demographic Triggers:** Lower secondary education levels show a higher propensity for days delinquent compared to academic degree holders.
 - **Financial Status:** Clear baseline correlation between elevated credit-to-income ratios and default risks.
 
+---
+
+## 🔗 Data Source
+The full dataset used in this project can be downloaded from [Home Credit Default Risk on Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data).
+
+---
+
 ## 🚀 How to View
 1. Download the `.pbix` file from the `/Dashboard` directory.
 2. Open it using Power BI Desktop to interact with the visual filters.
