@@ -129,7 +129,7 @@ Home-Credit-Risk-Analysis/
 │   └── photo_5765035018769078583_y.jpg
 │
 ├── PDF/
-│   └── Home_Credit_Risk_Report.pdf
+│   └── Credit_Risk_Data.pdf
 │
 
 └── README.md
