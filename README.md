@@ -83,7 +83,7 @@ Borrowers may have financial obligations outside the current loan portfolio. Tra
 
 | View | Screenshot | Focus Area |
 | :--- | :---: | :--- |
-| **1. Loan Risk Overview** | *(Top Section)* | Executive summary of applications, default rate, income levels, and KPI indicators. |
+| **1. Loan Risk Overview** |<img src="Screenshots/photo_5765035018769078581_y.jpg" width="250"> | Executive summary of applications, default rate, income levels, and KPI indicators. |
 | **2. Demographic Analysis** | <img src="Screenshots/photo_5765035018769078582_y.jpg" width="250"> | Breakdown of age, gender, education level, and credit-to-income performance. |
 | **3. Risk & Behavioral Insights** | <img src="Screenshots/photo_5765035018769078583_y.jpg" width="250"> | Analysis of days delayed, total external debt, and deep-dive financial exposure. |
 
