@@ -1,48 +1,135 @@
-# Home-Credit-Risk-Analysis
-# Home Credit Loan Risk & Behavioral Dashboard
+# Home Credit Loan Risk & Behavioral Dashboard 💳📊
 
-An end-to-end data analytics project focused on evaluating credit risk, analyzing borrower demographics, and uncovering financial behavior patterns using the Home Credit dataset.
+📌 **Project Overview**  
+An end-to-end Credit Risk & Behavioral Analytics project built using the Home Credit dataset to understand borrower characteristics, identify patterns associated with loan default, and translate those patterns into actionable risk-management opportunities.
 
-## 📊 Dashboard Overview
-This multi-page Power BI dashboard is designed with a professional corporate banking aesthetic (Deep Blue & Gold) to assist risk officers in making data-driven credit decisions.
+The objective was not simply to report the number of defaults, but to answer three key business questions:
+1. **Who represents the highest-risk segments?**
+2. **What financial and demographic patterns are associated with higher delinquency and default?**
+3. **How can these insights support better credit-risk decisions?**
 
-### Project Structure:
-1. **HOME CREDIT LOAN RISK OVERVIEW:** A high-level executive summary tracking core KPIs (Total Applications, Default Rates, Income Levels).
-2. **HOME CREDIT DEMOGRAPHIC ANALYSIS:** Deep dive into borrower characteristics including age, gender, education, and credit-to-income ratios.
-3. **HOME CREDIT RISK & BEHAVIORAL INSIGHTS:** Exploration of financial behaviors, average days delinquent, and external active debts.
-
----
-
-## 🛠️ Tech Stack & Workflow
-
-### 1. Data Cleaning & Engineering (Python)
-- Handled missing values, duplicates, and data type formatting.
-- Integrated child and family size columns into the main pipeline.
-- Exported clean structured files ready for BI consumption.
-
-### 2. Data Modeling & Transformation (Power Query & DAX)
-- Structured a robust data model in Power BI.
-- Created advanced DAX measures to track complex risk metrics dynamically:
-  - `Default Rate %`
-  - `Average Days Delayed`
-  - `Maximum Credit Amount`
-  - `Total External Active Debt`
+The analysis combines **Python, Power BI, Power Query, and DAX** to transform raw loan application data into an interactive risk analytics solution.
 
 ---
 
-## 📈 Key Insights Uncovered
-- **Risk Metrics:** The overall portfolio default rate stands at **8.08%** across 246K applications.
-- **Demographic Triggers:** Lower secondary education levels show a higher propensity for days delinquent compared to academic degree holders.
-- **Financial Status:** Clear baseline correlation between elevated credit-to-income ratios and default risks.
+## 🖼️ Dashboard Preview
+
+<p center">
+  <img src="Screenshots/photo_5765035018769078581_y.jpg" alt="Loan Risk Overview Dashboard" width="100%">
+</p>
 
 ---
 
-## 🔗 Data Source
-The full dataset used in this project can be downloaded from [Home Credit Default Risk on Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data).
+## 📊 Portfolio Overview
+The analyzed portfolio contains approximately **246K loan applications** with an overall default rate of:
+
+> **8.08% Default Rate**
+
+This means that while the majority of applications are performing successfully, a meaningful portion of the portfolio carries credit risk that requires closer monitoring. The dashboard therefore focuses on understanding where that risk is concentrated and what characteristics distinguish higher-risk borrowers.
 
 ---
 
-## 🚀 How to View
-1. Download the `.pbix` file from the `/Dashboard` directory.
-2. Open it using Power BI Desktop to interact with the visual filters.
-3. Alternatively, check out the full static report in the `/Reports` folder.
+## 🔎 Key Findings & Business Insights
+
+### 1️⃣ Default Risk Is Not Evenly Distributed
+The overall default rate of 8.08% provides a useful portfolio benchmark, but portfolio-level averages can hide important differences between borrower segments. When we break the portfolio down by demographic and financial characteristics, risk patterns become more visible.
+
+💡 **Business Opportunity:**  
+Instead of applying the same credit strategy to every applicant, lenders can use risk segmentation to identify higher-risk groups and apply more targeted assessment and monitoring:
+* More detailed affordability checks for higher-risk segments.
+* Risk-based pricing where appropriate.
+* Additional monitoring after loan approval.
+* More conservative exposure limits for higher-risk profiles.
+
+---
+
+### 🎓 2️⃣ Education Level Shows a Noticeable Risk Pattern
+The analysis revealed that borrowers with lower secondary education levels tend to show higher delinquency patterns compared with borrowers holding academic degrees. This does not mean education itself causes default; instead, education level may act as a proxy for other socioeconomic or financial factors.
+
+💡 **Business Opportunity:**  
+Risk teams could combine education with other variables:
+`Income` ➔ `Credit-to-Income Ratio` ➔ `Employment` ➔ `Previous Delinquency` ➔ `Loan Exposure`
+
+---
+
+### 💰 3️⃣ Credit-to-Income Ratio Is an Important Risk Signal
+One of the strongest behavioral patterns identified in the analysis is the relationship between higher credit-to-income ratios and increased default risk. When a borrower's credit exposure becomes large relative to their income, their financial capacity to absorb additional repayment obligations may become more constrained.
+
+<p center">
+  <img src="Screenshots/photo_5765035018769078582_y.jpg" alt="Demographic & Risk Analysis" width="100%">
+</p>
+
+💡 **Business Opportunity:**  
+* Flagging applications with unusually high credit-to-income ratios.
+* Performing additional affordability checks.
+* Limiting exposure for higher-risk profiles.
+
+---
+
+### ⏱️ 4️⃣ Delinquency Provides an Early Warning Signal
+The dashboard analyzes **Average Days Delayed** to understand borrower payment behavior. Delinquency provides an early indication of financial stress before a borrower reaches a more severe credit-risk stage.
+
+💡 **Business Opportunity:**  
+`Increasing Delays` ➔ `Risk Alert` ➔ `Customer Review` ➔ `Early Intervention`
+
+---
+
+### 💳 5️⃣ External Active Debt Adds Another Layer of Risk
+Borrowers may have financial obligations outside the current loan portfolio. Tracking **Total External Active Debt** provides additional context when evaluating a borrower's overall financial exposure.
+
+---
+
+## 📊 Dashboard Structure
+
+| View | Screenshot | Focus Area |
+| :--- | :---: | :--- |
+| **1. Loan Risk Overview** | *(Top Section)* | Executive summary of applications, default rate, income levels, and KPI indicators. |
+| **2. Demographic Analysis** | <img src="Screenshots/photo_5765035018769078582_y.jpg" width="250"> | Breakdown of age, gender, education level, and credit-to-income performance. |
+| **3. Risk & Behavioral Insights** | <img src="Screenshots/photo_5765035018769078583_y.jpg" width="250"> | Analysis of days delayed, total external debt, and deep-dive financial exposure. |
+
+---
+
+## 🎯 From Insights to Risk Strategy
+1. **Risk-Based Segmentation:** Move from a one-size-fits-all approach toward segment-based risk assessment.
+2. **Early-Warning Systems:** Use delinquency behavior and exposure metrics to intervene early.
+3. **Affordability Assessment:** Evaluate income, credit exposure, and external debt together.
+4. **Portfolio Monitoring:** Track default trends continuously across demographic and behavioral segments.
+
+---
+
+## 🛠️ Technical Implementation
+
+### **Python – Data Cleaning & Engineering**
+* Missing-value handling & duplicate detection
+* Data-type standardization & feature integration
+* Integration of household and child-count variables into the analytical pipeline
+
+### **Power Query & Data Modeling**
+* Structured analytical data model to support dynamic filtering and multi-dimensional analysis.
+
+### **DAX Measures Developed**
+* `Default Rate %`
+* `Average Days Delayed`
+* `Maximum Credit Amount`
+* `Total External Active Debt`
+
+---
+
+## 📂 Repository Structure
+
+```text
+Home-Credit-Risk-Analysis/
+│
+├── Dashboard/
+│   └── Credit_Risk_Data.pbix
+│
+├── Screenshots/
+│   ├── photo_5765035018769078581_y.jpg
+│   ├── photo_5765035018769078582_y.jpg
+│   └── photo_5765035018769078583_y.jpg
+│
+├── PDF/
+│   └── Home_Credit_Risk_Report.pdf
+│
+
+└── README.md
